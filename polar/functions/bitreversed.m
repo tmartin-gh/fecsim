@@ -5,7 +5,7 @@ function i = bitreversed(j,n)
 i=zeros(length(j),1);
 
 for indx=1:length(j)
-i(indx) = bin2dec(wrev(dec2bin(j(indx),n)));
+i(indx) = bin2dec(fliplr(dec2bin(j(indx),n)));
 end
 % dec2bin() : produces a string of binary form of "j" in at least "n" bits
 % wrev()    : produces a reversed string (here again a binary string)
